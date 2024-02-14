@@ -43,4 +43,12 @@
       <disableFlattening>false</disableFlattening>
     </item>
   </left_rail_o>
+  <features2_o item-list="true">
+    <item datasource="features">
+      <key>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</key>
+      <value>Closed captioning</value>
+      <include>/site/components/features/72ef047f-02b7-89e2-bbd5-4763ac7dbca8.xml</include>
+      <disableFlattening>false</disableFlattening>
+    </item>
+  </features2_o>
 </component>

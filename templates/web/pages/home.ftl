@@ -54,6 +54,14 @@
           $itemAttributes={ "class": "feature-container" }
         />
       </section>
+      <section style="margin-top: 20px">
+        <header class="major"><h2>Test</h2></header>
+          <@crafter.renderComponentCollection
+            $field="features2_o"
+            $containerAttributes={ "class": "features" }
+            $itemAttributes={ "class": "feature-container" }
+          />
+      </section>
       <!-- /Section: Features -->
 
       <!-- Section: Articles -->

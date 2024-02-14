@@ -13,7 +13,6 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-
 <form>
 	<title>Section Defaults</title>
 	<description>Section Defaults provides inherited values to all children and sibling content items. To learn more about content inheritance see docs.craftercms.org topic &quot;Content Inheritance&quot;</description>
@@ -21,11 +20,12 @@
 	<content-type>/component/level-descriptor</content-type>
 	<imageThumbnail>section-defaults.png</imageThumbnail>
 	<quickCreate>false</quickCreate>
-	<quickCreatePath></quickCreatePath>
-	<properties>		<property>
+	<quickCreatePath/>
+	<properties>
+		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
-			<value></value>
+			<value/>
 			<type>template</type>
 		</property>
 		<property>
@@ -41,19 +41,78 @@
 			<type>string</type>
 		</property>
 	</properties>
-	<sections>		<section>
+	<sections>
+		<section>
 			<title>Section Defaults Properties</title>
-			<description></description>
+			<description/>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
+					<type>node-selector</type>
+					<id>features2_o</id>
+					<iceId>features</iceId>
+					<title>Features</title>
+					<description/>
+					<defaultValue/>
+					<help/>
+					<properties>
+						<property>
+							<name>minSize</name>
+							<value/>
+							<type>int</type>
+						</property>
+						<property>
+							<name>maxSize</name>
+							<value/>
+							<type>int</type>
+						</property>
+						<property>
+							<name>itemManager</name>
+							<value>featuresComponents</value>
+							<type>datasource:item</type>
+						</property>
+						<property>
+							<name>readonly</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>disableFlattening</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>useSingleValueFilename</name>
+							<value/>
+							<type>boolean</type>
+						</property>
+						<property>
+							<name>contentTypes</name>
+							<value>/component/feature</value>
+							<type>contentTypes</type>
+						</property>
+						<property>
+							<name>tags</name>
+							<value/>
+							<type>string</type>
+						</property>
+					</properties>
+					<constraints>
+						<constraint>
+							<name>allowDuplicates</name>
+							<value><![CDATA[]]></value>
+							<type>boolean</type>
+						</constraint>
+					</constraints>
+				</field>
+				<field>
 					<type>file-name</type>
 					<id>file-name</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>File Name</title>
-					<description></description>
+					<description/>
 					<defaultValue>crafter-level-descriptor.level</defaultValue>
-					<help></help>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -71,17 +130,16 @@
 							<type>boolean</type>
 						</property>
 					</properties>
-					<constraints>
-					</constraints>
+					<constraints/>
 				</field>
 				<field>
 					<type>node-selector</type>
 					<id>header_o</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Header</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
@@ -100,17 +158,17 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -125,11 +183,11 @@
 				<field>
 					<type>node-selector</type>
 					<id>left_rail_o</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Left Rail</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
@@ -148,17 +206,17 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -173,51 +231,100 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources>				<datasource>
-					<type>shared-content</type>
-					<id>components-header</id>
-					<title>Components Header</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/site/components/headers/</value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>browsePath</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>type</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>shared-content</type>
-					<id>components-left-rail</id>
-					<title>Components Left Rail</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/site/components/left-rails/</value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>browsePath</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>type</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-					</properties>
-				</datasource>
+	<datasources>
+		<datasource>
+			<type>components</type>
+			<id>featuresComponents</id>
+			<title>Features Components</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepositoryPath</name>
+					<value>/site/components</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/site/components</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value>/component/feature</value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value/>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>shared-content</type>
+			<id>components-header</id>
+			<title>Components Header</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/site/components/headers/</value>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>browsePath</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>type</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>shared-content</type>
+			<id>components-left-rail</id>
+			<title>Components Left Rail</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/site/components/left-rails/</value>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>browsePath</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>type</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+			</properties>
+		</datasource>
 	</datasources>
 </form>

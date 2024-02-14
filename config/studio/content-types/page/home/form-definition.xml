@@ -13,16 +13,16 @@
   ~ You should have received a copy of the GNU General Public License
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
-
 <form>
 	<title>Home</title>
-	<description></description>
+	<description/>
 	<objectType>page</objectType>
 	<content-type>/page/home</content-type>
 	<imageThumbnail>page-home.png</imageThumbnail>
 	<quickCreate>false</quickCreate>
-	<quickCreatePath></quickCreatePath>
-	<properties>		<property>
+	<quickCreatePath/>
+	<properties>
+		<property>
 			<name>display-template</name>
 			<label>Display Template</label>
 			<value>/templates/web/pages/home.ftl</value>
@@ -31,7 +31,7 @@
 		<property>
 			<name>no-template-required</name>
 			<label>No Template Required</label>
-			<value></value>
+			<value/>
 			<type>boolean</type>
 		</property>
 		<property>
@@ -41,19 +41,20 @@
 			<type>string</type>
 		</property>
 	</properties>
-	<sections>		<section>
+	<sections>
+		<section>
 			<title>Page Properties</title>
-			<description></description>
+			<description/>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
 					<type>file-name</type>
 					<id>file-name</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Page URL</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -71,17 +72,16 @@
 							<type>boolean</type>
 						</property>
 					</properties>
-					<constraints>
-					</constraints>
+					<constraints/>
 				</field>
 				<field>
 					<type>input</type>
 					<id>internal-name</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Internal Name</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -102,18 +102,18 @@
 						</constraint>
 					</constraints>
 				</field>
-        <field>
+				<field>
 					<type>checkbox</type>
 					<id>disabled</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Disable Page</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -130,9 +130,9 @@
 					<id>title_t</id>
 					<iceId>core</iceId>
 					<title>Title</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -146,7 +146,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -174,8 +174,8 @@
 					<iceId>core</iceId>
 					<title>Header</title>
 					<description>Default header is inherited from Section Defaults. Specify a new header to overwrite it.</description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
@@ -194,17 +194,17 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -214,7 +214,7 @@
 						</property>
 						<property>
 							<name>tags</name>
-							<value></value>
+							<value/>
 							<type>string</type>
 						</property>
 					</properties>
@@ -229,11 +229,11 @@
 				<field>
 					<type>node-selector</type>
 					<id>left_rail_o</id>
-					<iceId></iceId>
+					<iceId/>
 					<title>Left Rail</title>
 					<description>Default left-rail is inherited from Section Defaults. Specify a new left-rail to overwrite it.</description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
@@ -252,17 +252,17 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -272,7 +272,7 @@
 						</property>
 						<property>
 							<name>tags</name>
-							<value></value>
+							<value/>
 							<type>string</type>
 						</property>
 					</properties>
@@ -288,7 +288,7 @@
 		</section>
 		<section>
 			<title>Hero Section</title>
-			<description></description>
+			<description/>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
@@ -296,9 +296,9 @@
 					<id>hero_title_html</id>
 					<iceId>hero</iceId>
 					<title>Hero Title</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>height</name>
@@ -322,7 +322,7 @@
 						</property>
 						<property>
 							<name>supportedChannels</name>
-							<value></value>
+							<value/>
 							<type>supportedChannels</type>
 						</property>
 						<property>
@@ -337,7 +337,7 @@
 						</property>
 						<property>
 							<name>videoManager</name>
-							<value></value>
+							<value/>
 							<type>datasource:video</type>
 						</property>
 					</properties>
@@ -354,9 +354,9 @@
 					<id>hero_text_html</id>
 					<iceId>hero</iceId>
 					<title>Hero Text</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>height</name>
@@ -380,7 +380,7 @@
 						</property>
 						<property>
 							<name>supportedChannels</name>
-							<value></value>
+							<value/>
 							<type>supportedChannels</type>
 						</property>
 						<property>
@@ -395,7 +395,7 @@
 						</property>
 						<property>
 							<name>videoManager</name>
-							<value></value>
+							<value/>
 							<type>datasource:video</type>
 						</property>
 					</properties>
@@ -412,9 +412,9 @@
 					<id>hero_image_s</id>
 					<iceId>hero</iceId>
 					<title>Hero Image</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>width</name>
@@ -428,12 +428,12 @@
 						</property>
 						<property>
 							<name>thumbnailWidth</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
 							<name>thumbnailHeight</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
@@ -443,7 +443,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 					</properties>
@@ -459,7 +459,7 @@
 		</section>
 		<section>
 			<title>Features</title>
-			<description></description>
+			<description/>
 			<defaultOpen>true</defaultOpen>
 			<fields>
 				<field>
@@ -467,9 +467,9 @@
 					<id>features_title_t</id>
 					<iceId>features</iceId>
 					<title>Features Title</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>size</name>
@@ -483,7 +483,7 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -510,18 +510,18 @@
 					<id>features_o</id>
 					<iceId>features</iceId>
 					<title>Features</title>
-					<description></description>
-					<defaultValue></defaultValue>
-					<help></help>
+					<description/>
+					<defaultValue/>
+					<help/>
 					<properties>
 						<property>
 							<name>minSize</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
 							<name>maxSize</name>
-							<value></value>
+							<value/>
 							<type>int</type>
 						</property>
 						<property>
@@ -531,17 +531,17 @@
 						</property>
 						<property>
 							<name>readonly</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>disableFlattening</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
 							<name>useSingleValueFilename</name>
-							<value></value>
+							<value/>
 							<type>boolean</type>
 						</property>
 						<property>
@@ -551,7 +551,7 @@
 						</property>
 						<property>
 							<name>tags</name>
-							<value></value>
+							<value/>
 							<type>string</type>
 						</property>
 					</properties>
@@ -566,140 +566,141 @@
 			</fields>
 		</section>
 	</sections>
-	<datasources>				<datasource>
-					<type>img-repository-upload</type>
-					<id>existingImages</id>
-					<title>Existing Images</title>
-					<interface>image</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/static-assets/images/</value>
-								<type>undefined</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>img-desktop-upload</type>
-					<id>uploadImages</id>
-					<title>Upload Images</title>
-					<interface>image</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/static-assets/item/images/{yyyy}/{mm}/{dd}/</value>
-								<type>undefined</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>shared-content</type>
-					<id>components-header</id>
-					<title>Components Header</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/site/components/headers/</value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>browsePath</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>type</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>shared-content</type>
-					<id>components-left-rail</id>
-					<title>Components Left Rail</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>repoPath</name>
-							<value>/site/components/left-rails/</value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>browsePath</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>type</name>
-							<value></value>
-								<type>undefined</type>
-						</property>
-						<property>
-							<name>enableCreateNew</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowseExisting</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearchExisting</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-					</properties>
-				</datasource>
-				<datasource>
-					<type>components</type>
-					<id>featuresComponents</id>
-					<title>Features Components</title>
-					<interface>item</interface>
-					<properties>
-						<property>
-							<name>allowShared</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>allowEmbedded</name>
-							<value>true</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableBrowse</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>enableSearch</name>
-							<value>false</value>
-								<type>boolean</type>
-						</property>
-						<property>
-							<name>baseRepositoryPath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>baseBrowsePath</name>
-							<value>/site/components</value>
-								<type>string</type>
-						</property>
-						<property>
-							<name>contentTypes</name>
-							<value>/component/feature</value>
-								<type>contentTypes</type>
-						</property>
-						<property>
-							<name>tags</name>
-							<value></value>
-								<type>string</type>
-						</property>
-					</properties>
-				</datasource>
+	<datasources>
+		<datasource>
+			<type>img-repository-upload</type>
+			<id>existingImages</id>
+			<title>Existing Images</title>
+			<interface>image</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/static-assets/images/</value>
+					<type>undefined</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>img-desktop-upload</type>
+			<id>uploadImages</id>
+			<title>Upload Images</title>
+			<interface>image</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/static-assets/item/images/{yyyy}/{mm}/{dd}/</value>
+					<type>undefined</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>shared-content</type>
+			<id>components-header</id>
+			<title>Components Header</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/site/components/headers/</value>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>browsePath</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>type</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>shared-content</type>
+			<id>components-left-rail</id>
+			<title>Components Left Rail</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>repoPath</name>
+					<value>/site/components/left-rails/</value>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>browsePath</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>type</name>
+					<value/>
+					<type>undefined</type>
+				</property>
+				<property>
+					<name>enableCreateNew</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowseExisting</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearchExisting</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+			</properties>
+		</datasource>
+		<datasource>
+			<type>components</type>
+			<id>featuresComponents</id>
+			<title>Features Components</title>
+			<interface>item</interface>
+			<properties>
+				<property>
+					<name>allowShared</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>allowEmbedded</name>
+					<value>true</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableBrowse</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>enableSearch</name>
+					<value>false</value>
+					<type>boolean</type>
+				</property>
+				<property>
+					<name>baseRepositoryPath</name>
+					<value>/site/components</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>baseBrowsePath</name>
+					<value>/site/components</value>
+					<type>string</type>
+				</property>
+				<property>
+					<name>contentTypes</name>
+					<value>/component/feature</value>
+					<type>contentTypes</type>
+				</property>
+				<property>
+					<name>tags</name>
+					<value/>
+					<type>string</type>
+				</property>
+			</properties>
+		</datasource>
 	</datasources>
 </form>
